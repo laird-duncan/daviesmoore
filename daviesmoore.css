@@ -1,0 +1,106 @@
+body {
+	font-family: "Montserrat Regular", Helvetica, Arial, sans-serif;
+	font-size: 1.5em;
+}
+
+#container {
+	margin: auto;
+}
+
+#diamond {
+	background-color: #559cbe;
+	opacity: 0.75;
+	width: 250px;
+	height: 250px;
+	font-family: "Montserrat Regular", Helvetica, Arial, sans-serif;
+	color: #fff;
+	-ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+	position: relative;
+}
+
+#diamond p {
+	-ms-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+#circle {
+	background-color: #c0eb23;
+	opacity: 0.75;
+	width: 250px;
+	height: 250px;
+	color: #000;
+	-webkit-border-radius: 250px;
+	-moz-border-radius: 250px;
+	border-radius: 250px;
+	position: relative;
+}
+
+div p {
+	width: 250px;
+	text-align: center;
+}
+
+input[type="text"] {
+	border: 0;
+	border-bottom: 2px solid #777;
+}
+
+@media screen and (max-width: 767px) {
+	#container {
+		margin-top: 115px;
+		width: 250px;
+	}
+	
+	div p {
+		position: absolute;
+	}
+	
+	#diamond {
+		z-index: 200;
+	}
+	
+	#diamond p {
+		top: 90px;
+		left: 5px;
+	}
+	
+	#circle {
+		top: -70px;
+		z-index: 100;
+	}
+	#circle p {
+		top: 110px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	#container {
+		margin-top: 115px;
+		width: 425px;
+	}
+	
+	div p {
+		text-transform: uppercase;
+	}
+	
+	#diamond {
+		z-index: 100;
+	}
+	
+	#diamond p {
+		top: 90px;
+		left: 5px;
+	}
+	
+	#circle {
+		top: -275px;
+		left: 200px;
+		z-index: 200;
+	}
+	#circle p {
+		top: 110px;
+	}
+}
